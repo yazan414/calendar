@@ -69,10 +69,43 @@
 				<td>Teams Meeting</td>
 				<td>
 					<a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0D%0APRODID:-//xyz Corp//NONSGML PDA Calendar Version 1.0//EN%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ADTSTAMP:19960704T120000Z%0D%0AUID:uid1@example.com%0D%0AORGANIZER:mailto:yazan414@yahoo.com%0D%0ADTSTART:20230531T070000%0D%0ADTEND:20230531T080000%0D%0ASTATUS:CONFIRMED%0D%0ASUMMARY:Yazan’s Meeting%0D%0ADESCRIPTION:Come early please%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event.ics">
-						<button>Add to Calendar</button>
+						<button>Apple Calendar</button>
 					</a>
-					<button onclick="addEventToCalendar()">Add to Native Calendar</button>
+					<button onclick="addEventToCalendar()">Android Calendar</button>
 				</td>
 			</tr>
 		</tbody>
-	</
+	</table>
+
+	<script>
+		function addEventToCalendar() {
+			var startTime = "20230531T070000";
+			var endTime = "20230531T080000";
+			var title = "Yazan’s Meeting";
+
+		var notes = "Come early please";
+		var location = "Teams Meeting";
+
+		var calendarEvent = {
+			startTime: startTime,
+			endTime: endTime,
+			title: title,
+			notes: notes,
+			location: location
+		};
+
+		var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+		if (/android/i.test(userAgent)) {
+			// Prompt the user to choose a calendar app to handle the event
+			window.open("content://com.android.calendar/event?action=edit&description=" + notes + "&location=" + location + "&summary=" + title + "&dtstart=" + startTime + "&dtend=" + endTime);
+		} else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+			// Open the event in the iOS Calendar app
+			window.open("calshow:" + startTime);
+		} else {
+			alert("Sorry, your device is not supported.");
+		}
+	}
+</script>
+
+		</body>
+</html>
