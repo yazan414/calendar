@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Calendar Event</title>
+</head>
+<body>
+	<style>
+		table {
+			border-collapse: collapse;
+			margin: 20px;
+			width: auto;
+		}
+		th {
+			background-color: #4CAF50;
+			color: black;
+			padding: 10px;
+			text-align: center;
+			white-space: nowrap;
+			width: auto;
+		}
+		td {
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		td:last-child {
+			padding: 0;
+			text-align: center;
+			vertical-align: middle;
+			width: 100px;
+		}
+
+		button {
+			background-color: #4CAF50;
+			border: 1px solid black;
+			color: white;
+			cursor: pointer;
+			padding: 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			border-radius: 4px;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Start Time</th>
+				<th>End Time</th>
+				<th>Title</th>
+				<th>Notes</th>
+				<th>Location</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>31/05/2023 07:00 AM</td>
+				<td>31/05/2023 08:00 AM</td>
+				<td>Yazan’s Meeting</td>
+				<td>Come early please</td>
+				<td>Teams Meeting</td>
+				<td>
+					<a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0D%0APRODID:-//xyz Corp//NONSGML PDA Calendar Version 1.0//EN%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ADTSTAMP:19960704T120000Z%0D%0AUID:uid1@example.com%0D%0AORGANIZER:mailto:yazan414@yahoo.com%0D%0ADTSTART:20230531T070000%0D%0ADTEND:20230531T080000%0D%0ASTATUS:CONFIRMED%0D%0ASUMMARY:Yazan’s Meeting%0D%0ADESCRIPTION:Come early please%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event.ics">
+						<button>Add to Apple Calendar</button>
+					</a>
+					<a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Yazan's+Meeting&dates=20230531T070000/20230531T080000&details=Teams+Meeting&location=&trp=false&sprop=&sprop=name:" target="_blank">
+						<button>Add to Google Calendar</button>
+					</a>
+			
