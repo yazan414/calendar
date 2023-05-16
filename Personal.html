@@ -1,1 +1,198 @@
-Created on May 16, 2023 at 3:31 PM
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Events</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 30px;
+      width: 90%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    th {
+      background-color: #FF9854;
+      color: black;
+      padding: 10px;
+      text-align: center;
+      white-space: nowrap;
+      width: auto;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 10px;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    td:last-child {
+      padding: 10;
+      text-align: center;
+      vertical-align: middle;
+      width: 100px;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    .button1 {
+      background-color: #E6E6E6;
+      border: 3px solid black;
+      color: white;
+      cursor: pointer;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 90px;
+      padding-right: 90px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-right: 20px;
+      transition-duration: 0.4s;
+      border-radius: 50px;
+    }
+
+    .button1:hover {
+      background-color: #FF9854;
+    }
+
+    .button2 {
+      background-color: white;
+      border: 3px solid black;
+      color: white;
+      cursor: pointer;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 90px;
+      padding-right: 90px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 20px;
+      transition-duration: 0.4s;
+      border-radius: 50px;
+    }
+
+    .button2:hover {
+      background-color: black;
+    }
+
+    .button3 {
+      background-color: #35DD08;
+      border: 3px solid black;
+      color: black;
+      cursor: pointer;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 90px;
+      padding-right: 90px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 20px;
+      transition-duration: 0.4s;
+      border-radius: 50px;
+    }
+
+    .button3:hover {
+      background-color: #35DD08;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-family: Arial, Helvetica, sans-serif; margin-top: 50px; color: black; text-align: center; text-decoration: underline; font-size: 40px;">
+    Daniel’s birthday party
+  </h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Title</th>
+        <th>Notes</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>05/18/2023 03:36 PM</td>
+        <td>05/18/2023 04:36 PM</td>
+        <td>Daniel’s birthday</td>
+        <td>Bring gifts</td>
+        <td>My house</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid white;">
+          <a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0D%0APRODID:-//xyz Corp//NONSGML PDA Calendar Version 1.0//EN%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ADTSTAMP:19960704T120000Z%0D%0AUID:uid1@example.com%0D%0AORGANIZER:yazan414@yahoo.com%0D%0ADTSTART:20230518T153600%0D%0ADTEND:20230518T163600%0D%0ASTATUS:CONFIRMED%0D%0ASUMMARY:Daniel’s birthday%0D%0ADESCRIPTION:Bring gifts%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event1.ics">
+            <button class="button1">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAFBlWElmTU0A
+KgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAAB
+AAAAHqADAAQAAAABAAAAHgAAAADYnBkbAAAB9UlEQVRIDc2WPUgdQRSFn1FCNMYgREUL0dhZKcFK
+BMGIlaS1S2PQWizsrMTCQhBiY2MVbIWgCEIKEyOIiCA2UXjEykTx7+EPSuJ3YBeW4Y07zx03OfAx
++2buvWeXvW92Mpl/pCKPvm+o9R7K4AP8hUdVCdXH4RJk9g1S0SQuMgwZS8O1G5M/EdMTrpvSMJ6P
+mOqJ+9MwrcDkd2B8xjhYiKkaI07PCGiAl/ALsqCnu4FFyMInOIB2eB5c7zHmoGC9IGMEtuEKZHYO
+qzAMzVAN72AOdFNhg91yvQvq9ipw1msi1yAslG/UzaiZ8q1F53aIaYVYVRKxCdHkpNfT1IvdrCY8
+m05RrxTuVS2rR5D0CcP8JWoV3+sYLPZ5NFWDddhMnxgLTk1g5Nh+7rOwYVs0jWtsgQ+Y1+ZyYcsz
+jc3ftjyXeTWU9f2aRscuFR1j6omrs8WaxtrmfEl7uZrVSerC8K/gYzykXouLsz4E6kYfpmGNLPU6
+IVYzRIRJvsZrag5Enc13rLVZ0KnCp55S7GdcQd2MvrO+nlZ1voLLtz/TRmB4akx6A9o634KzRolM
+aqr8j86OQaDey2dIYq7DhP7PBesVGV/ANM8xtw4L8B1OwYzZYq4R8ir2VEBWOQxBD8hwGebhB8hM
+kkEvdIH2ghXQAUAfiv9Ld/noNgwCa09fAAAAAElFTkSuQmCC" alt="Apple Logo">
+            </button>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h1 style="font-family: Arial, Helvetica, sans-serif; margin-top: 50px; color: black; text-align: center; text-decoration: underline; font-size: 40px;">
+    Family Trip
+  </h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Title</th>
+        <th>Notes</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>05/20/2023 03:37 PM</td>
+        <td>05/20/2023 05:37 PM</td>
+        <td>Family Trip to Istanbul</td>
+        <td>Cost 1000</td>
+        <td>Turkey</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid white;">
+          <a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0D%0APRODID:-//xyz Corp//NONSGML PDA Calendar Version 1.0//EN%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ADTSTAMP:19960704T120000Z%0D%0AUID:uid1@example.com%0D%0AORGANIZER:yazan414@yahoo.com%0D%0ADTSTART:20230520T153700%0D%0ADTEND:20230520T173700%0D%0ASTATUS:CONFIRMED%0D%0ASUMMARY:Family Trip to Istanbul%0D%0ADESCRIPTION:Cost 1000%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="event2.ics">
+            <button class="button1">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAFBlWElmTU0A
+KgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAAB
+AAAAHqADAAQAAAABAAAAHgAAAADYnBkbAAAB9UlEQVRIDc2WPUgdQRSFn1FCNMYgREUL0dhZKcFK
+BMGIlaS1S2PQWizsrMTCQhBiY2MVbIWgCEIKEyOIiCA2UXjEykTx7+EPSuJ3YBeW4Y07zx03OfAx
++2buvWeXvW92Mpl/pCKPvm+o9R7K4AP8hUdVCdXH4RJk9g1S0SQuMgwZS8O1G5M/EdMTrpvSMJ6P
+mOqJ+9MwrcDkd2B8xjhYiKkaI07PCGiAl/ALsqCnu4FFyMInOIB2eB5c7zHmoGC9IGMEtuEKZHYO
+qzAMzVAN72AOdFNhg91yvQvq9ipw1msi1yAslG/UzaiZ8q1F53aIaYVYVRKxCdHkpNfT1IvdrCY8
+m05RrxTuVS2rR5D0CcP8JWoV3+sYLPZ5NFWDddhMnxgLTk1g5Nh+7rOwYVs0jWtsgQ+Y1+ZyYcsz
+jc3ftjyXeTWU9f2aRscuFR1j6omrs8WaxtrmfEl7uZrVSerC8K/gYzykXouLsz4E6kYfpmGNLPU6
+IVYzRIRJvsZrag5Enc13rLVZ0KnCp55S7GdcQd2MvrO+nlZ1voLLtz/TRmB4akx6A9o634KzRolM
+aqr8j86OQaDey2dIYq7DhP7PBesVGV/ANM8xtw4L8B1OwYzZYq4R8ir2VEBWOQxBD8hwGebhB8hM
+kkEvdIH2ghXQAUAfiv9Ld/noNgwCa09fAAAAAElFTkSuQmCC" alt="Apple Logo">
+            </button>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
