@@ -1,1 +1,297 @@
-Created on May 17, 2023 at 2:24 AM
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Events</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 30px;
+      width: 90%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    th {
+      background-color: #FF9854;
+      color: black;
+      padding: 10px;
+      text-align: center;
+      white-space: nowrap;
+      width: auto;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 10px;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    td:last-child {
+      padding: 10;
+      text-align: center;
+      vertical-align: middle;
+      width: 100px;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    .button1 {
+      background-color: #E6E6E6;
+      border: 3px solid black;
+      color: white;
+      cursor: pointer;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 90px;
+      padding-right: 90px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-right: 20px;
+      transition-duration: 0.4s;
+      border-radius: 50px;
+    }
+
+    .button1:hover {
+      background-color: #FF9854;
+    }
+
+    .button2 {
+      background-color: white;
+      border: 3px solid black;
+      color: white;
+      cursor: pointer;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 90px;
+      padding-right: 90px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-left: 20px;
+      transition-duration: 0.4s;
+      border-radius: 50px;
+    }
+
+    .button2:hover {
+      background-color: black;
+    }
+
+    .button3 {
+      background-color: #41C8FF;
+      border: 3px solid black;
+      color: black;
+      cursor: pointer;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 25%;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 2px;
+      transition-duration: 0.4s;
+      border-radius: 50px;
+    }
+
+    .button3:hover {
+      background-color: #35DD08;
+    }
+  .button4 {
+      background-color: #9EB6C1;
+      border: 3px solid black;
+      color: black;
+      cursor: pointer;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 25%;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 2px;
+      transition-duration: 0.4s;
+      border-radius: 50px;
+    }
+
+    .button4:hover {
+      background-color: #35DD08;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+<tr>
+        <th colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid balck;font-family: Arial, Helvetica, sans-serif; color: black; text-align: center; text-decoration: underline; font-size: 40px;background-color: white;">Miami trip</th>
+      </tr>
+
+      <tr>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Title</th>
+        <th>Notes</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>05/27/2023 07:25 AM</td>
+        <td>05/27/2023 10:25 AM</td>
+        <td>Guys trip to Miami</td>
+        <td>Bring alcohol</td>
+        <td>Florida</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid white;">
+          <a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0D%0APRODID:-//xyz Corp//NONSGML PDA Calendar Version 1.0//EN%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ADTSTAMP:20230517T120000Z%0D%0AUID:rpi846%0D%0AORGANIZER:mailto:yazan.masri@gmail.com%0D%0ADTSTART:20230527T072500%0D%0ADTEND:20230527T102500%0D%0ASTATUS:CONFIRMED%0D%0ASUMMARY:Guys trip to Miami%0D%0ADESCRIPTION:Bring alcohol%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="eventrpi846.ics">
+            <button class="button1">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAFBlWElmTU0A
+KgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAAB
+AAAAHqADAAQAAAABAAAAHgAAAADYnBkbAAAB9UlEQVRIDc2WPUgdQRSFn1FCNMYgREUL0dhZKcFK
+BMGIlaS1S2PQWizsrMTCQhBiY2MVbIWgCEIKEyOIiCA2UXjEykTx7+EPSuJ3YBeW4Y07zx03OfAx
++2buvWeXvW92Mpl/pCKPvm+o9R7K4AP8hUdVCdXH4RJk9g1S0SQuMgwZS8O1G5M/EdMTrpvSMJ6P
+mOqJ+9MwrcDkd2B8xjhYiKkaI07PCGiAl/ALsqCnu4FFyMInOIB2eB5c7zHmoGC9IGMEtuEKZHYO
+qzAMzVAN72AOdFNhg91yvQvq9ipw1msi1yAslG/UzaiZ8q1F53aIaYVYVRKxCdHkpNfT1IvdrCY8
+m05RrxTuVS2rR5D0CcP8JWoV3+sYLPZ5NFWDddhMnxgLTk1g5Nh+7rOwYVs0jWtsgQ+Y1+ZyYcsz
+jc3ftjyXeTWU9f2aRscuFR1j6omrs8WaxtrmfEl7uZrVSerC8K/gYzykXouLsz4E6kYfpmGNLPU6
+IVYzRIRJvsZrag5Enc13rLVZ0KnCp55S7GdcQd2MvrO+nlZ1voLLtz/TRmB4akx6A9o634KzRolM
+aqr8j86OQaDey2dIYq7DhP7PBesVGV/ANM8xtw4L8B1OwYzZYq4R8ir2VEBWOQxBD8hwGebhB8hM
+kkEvdIH2ghXQAUAfiv9Ld/noNgwCa09fAAAAAElFTkSuQmCC" alt="Apple Logo">
+            </button>
+          </a>
+<a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Guys+trip+to+Miami&dates=05/27/2023 07:25 AM/05/27/2023 10:25 AM&details=Bring+alcohol&location=Florida&trp=false&sprop=&sprop=name:" target="_blank"><button class="button2"><img src="data:image/png;base64,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" alt="Google Logo"> </button></a></td></tr>
+<tr>
+<td colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid white;"><a href="mailto:yazan.masri@gmail.com?subject=RSVP: Guys trip to Miami&body=Hey Sam, Count me in for Guys trip to Miami."><button class="button3">RSVP</button></a>
+        </td>
+      </tr>
+<tr>
+<td colspan="5" style="padding-top:10px;padding-bottom:10px;border: 1px solid white;"><a href="ms-outlook://compose?to=yazan.masri@gmail.com&subject=RSVP:%20Guys%20trip%20to%20Miami&body=Hey%20Sam,%20Count%20me%20in%20for%20Guys%20trip%20to%20Miami."><button class="button4">RSVP-Outlook</button></a>
+        </td>
+      </tr>
+<td colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid white;"></td>
+</tbody>
+  </table>
+
+  <table>
+    <thead>
+<tr>
+        <th colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid balck;font-family: Arial, Helvetica, sans-serif; color: black; text-align: center; text-decoration: underline; font-size: 40px;background-color: white;">Family monthly dinner</th>
+      </tr>
+
+      <tr>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Title</th>
+        <th>Notes</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>05/31/2023 02:25 PM</td>
+        <td>05/31/2023 03:25 PM</td>
+        <td>Family dinner</td>
+        <td>None</td>
+        <td>My house</td>
+      </tr>
+      <tr>
+        <td colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid white;">
+          <a href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0D%0APRODID:-//xyz Corp//NONSGML PDA Calendar Version 1.0//EN%0D%0AVERSION:2.0%0D%0ABEGIN:VEVENT%0D%0ADTSTAMP:20230517T120000Z%0D%0AUID:n a596%0D%0AORGANIZER:mailto:yazan.masri@gmail.com%0D%0ADTSTART:20230531T142500%0D%0ADTEND:20230531T152500%0D%0ASTATUS:CONFIRMED%0D%0ASUMMARY:Family dinner%0D%0ADESCRIPTION:None%0D%0AEND:VEVENT%0D%0AEND:VCALENDAR" download="eventn a596.ics">
+            <button class="button1">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAFBlWElmTU0A
+KgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAAB
+AAAAHqADAAQAAAABAAAAHgAAAADYnBkbAAAB9UlEQVRIDc2WPUgdQRSFn1FCNMYgREUL0dhZKcFK
+BMGIlaS1S2PQWizsrMTCQhBiY2MVbIWgCEIKEyOIiCA2UXjEykTx7+EPSuJ3YBeW4Y07zx03OfAx
++2buvWeXvW92Mpl/pCKPvm+o9R7K4AP8hUdVCdXH4RJk9g1S0SQuMgwZS8O1G5M/EdMTrpvSMJ6P
+mOqJ+9MwrcDkd2B8xjhYiKkaI07PCGiAl/ALsqCnu4FFyMInOIB2eB5c7zHmoGC9IGMEtuEKZHYO
+qzAMzVAN72AOdFNhg91yvQvq9ipw1msi1yAslG/UzaiZ8q1F53aIaYVYVRKxCdHkpNfT1IvdrCY8
+m05RrxTuVS2rR5D0CcP8JWoV3+sYLPZ5NFWDddhMnxgLTk1g5Nh+7rOwYVs0jWtsgQ+Y1+ZyYcsz
+jc3ftjyXeTWU9f2aRscuFR1j6omrs8WaxtrmfEl7uZrVSerC8K/gYzykXouLsz4E6kYfpmGNLPU6
+IVYzRIRJvsZrag5Enc13rLVZ0KnCp55S7GdcQd2MvrO+nlZ1voLLtz/TRmB4akx6A9o634KzRolM
+aqr8j86OQaDey2dIYq7DhP7PBesVGV/ANM8xtw4L8B1OwYzZYq4R8ir2VEBWOQxBD8hwGebhB8hM
+kkEvdIH2ghXQAUAfiv9Ld/noNgwCa09fAAAAAElFTkSuQmCC" alt="Apple Logo">
+            </button>
+          </a>
+<a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Family+dinner&dates=05/31/2023 02:25 PM/05/31/2023 03:25 PM&details=None&location=My+house&trp=false&sprop=&sprop=name:" target="_blank"><button class="button2"><img src="data:image/png;base64,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" alt="Google Logo"> </button></a></td></tr>
+<tr>
+<td colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid white;"><a href="mailto:yazan.masri@gmail.com?subject=RSVP: Family dinner&body=Hey Sam, Count me in for Family dinner."><button class="button3">RSVP</button></a>
+        </td>
+      </tr>
+<tr>
+<td colspan="5" style="padding-top:10px;padding-bottom:10px;border: 1px solid white;"><a href="ms-outlook://compose?to=yazan.masri@gmail.com&subject=RSVP:%20Family%20dinner&body=Hey%20Sam,%20Count%20me%20in%20for%20Family%20dinner."><button class="button4">RSVP-Outlook</button></a>
+        </td>
+      </tr>
+<td colspan="5" style="padding-top:20px;padding-bottom:20px;border: 1px solid white;"></td>
+</tbody>
+  </table>
+
+</body>
+</html>
